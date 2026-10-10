@@ -18,6 +18,24 @@ The specific use case and technology stack will be finalized during development.
 
 ## Getting Started
 
+The application stack is not finalized. There is no application source code, dependency manifest, or local run command yet, so there is nothing to install or start.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ayushmaurya01/shipit-ai.git
+cd shipit-ai
+```
+
+What is in the repository today:
+
+- `README.md` — project documentation
+- `.gitignore` — ignores dependencies, environment files, build output, logs, and editor files
+- `.cursorrules` — development principles, git conventions, and documentation expectations
+- `LICENSE` — present in the repository; license text has not been added yet
+
+Until the stack is chosen, use Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`), and do not commit secrets, dependencies, or generated build output.
+
 Prerequisites and installation instructions will be added once the application stack is finalized.
 
 ## Testing
