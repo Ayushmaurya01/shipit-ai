@@ -1,0 +1,30 @@
+# Ship It AI — Project Rules
+
+## Project Context
+This repository is the capstone project for the FlyRank AI internship. The goal is to ship a production-ready, AI-enhanced frontend application.
+
+## Development Principles
+- Keep the application accessible, responsive, and performant.
+- Use semantic HTML and follow WCAG 2.1 AA principles.
+- Write readable, maintainable, modular code.
+- Handle loading states, errors, invalid input, and unexpected AI responses.
+- Never expose API keys, credentials, or secrets in frontend code.
+- Never claim a feature or test works without verifying it.
+
+## AI Integration
+- Use an LLM only where it solves a meaningful user problem.
+- Validate AI outputs before rendering them.
+- Provide clear fallback and error states.
+
+## Testing and Quality
+- Add tests for important components and user flows.
+- Run relevant tests after changes.
+- Check accessibility and performance before deployment.
+
+## Git Conventions
+- Use Conventional Commits, such as `feat:`, `fix:`, `docs:`, and `chore:`.
+- Keep commits focused and descriptive.
+- Do not commit secrets, dependencies, or generated build output.
+
+## Documentation
+- Keep README setup instructions, architecture, testing, deployment, limitations, and AI behavior accurate and up to date.
