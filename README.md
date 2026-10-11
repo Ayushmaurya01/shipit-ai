@@ -4,25 +4,34 @@ A production-ready, AI-enhanced frontend application built as part of the FlyRan
 
 ## Project Overview
 
-Ship It AI aims to demonstrate how AI can solve a practical user problem through an accessible, reliable, and user-friendly web interface.
-
-The specific use case and technology stack will be finalized during development.
-
-## Goals
-
-- Build an accessible and responsive frontend.
-- Integrate an AI capability that solves a real problem.
-- Handle errors and unexpected AI responses safely.
-- Add automated tests and accessibility checks.
-- Deploy the application and document its operation.
+Ship It AI is a Vite + React + TypeScript app. This first slice is an accessible settings form for name, email, and notification preference, with client-side validation and local storage.
 
 ## Getting Started
 
-Prerequisites and installation instructions will be added once the application stack is finalized.
+Prerequisites: Node.js 20 or later.
+
+```bash
+git clone https://github.com/Ayushmaurya01/shipit-ai.git
+cd shipit-ai
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite (usually `http://localhost:5173`).
 
 ## Testing
 
-Testing instructions and results will be documented as the project develops.
+```bash
+npm test
+```
+
+## Architecture
+
+- `src/App.tsx` — page shell and settings heading
+- `src/components/SettingsForm.tsx` — accessible form UI
+- `src/lib/settings.ts` — validation, defaults, and `localStorage` persistence
+
+Settings are stored in the browser under `shipit-ai.settings`. No API keys are used.
 
 ## Deployment
 
@@ -30,7 +39,8 @@ The production URL and deployment instructions will be added after deployment.
 
 ## Known Limitations
 
-This project is currently in its initial setup phase. Features, testing, and deployment are not yet complete.
+- Settings are stored only in this browser; there is no account backend yet.
+- AI features are not implemented in this slice.
 
 ## License
 
