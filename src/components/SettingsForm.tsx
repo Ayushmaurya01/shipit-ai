@@ -85,6 +85,7 @@ export function SettingsForm() {
           id={`${formId}-name`}
           name="name"
           type="text"
+          required
           autoComplete="name"
           value={form.name}
           onChange={(event) => updateField('name', event.target.value)}
@@ -105,6 +106,7 @@ export function SettingsForm() {
           id={`${formId}-email`}
           name="email"
           type="email"
+          required
           autoComplete="email"
           inputMode="email"
           value={form.email}
@@ -136,6 +138,7 @@ export function SettingsForm() {
                 <input
                   id={optionId}
                   type="radio"
+                  required
                   name="notifications"
                   value={option.value}
                   checked={form.notifications === option.value}
